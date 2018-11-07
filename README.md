@@ -1,7 +1,7 @@
 # Welcome to Snowblog!
 
 
-This app allows Jerry to keep track of his experiences at different ski resorts, and find new ones based on his location input! This is a beginner-friendly example of a simple Flask application, that is designed to help demonstrate the use of Flask, within the context of an introductory Python course. As such, the code in this repo is deliberately simplified and heavily-commented for clarity.
+This app allows Jerry to keep track of his experiences at different ski resorts, and find new ones based on his location input! This is a beginner-friendly example of a simple [Flask](http://flask.pocoo.org/) application, that uses [Bootstrap](http://getbootstrap.com) as the CSS framework. It's designed to help demonstrate the use of Flask, within the context of an introductory Python course. As such, the code in this repo is deliberately simplified and heavily-commented for clarity.
 
 ### Dependencies
 To run, execute the following commands:
@@ -12,11 +12,21 @@ $ source venv/bin/activate
 (venv)$ pip install flask-bootstrap flask-migrate flask-sqlalchemy flask-wtf numpy scipy googlemaps
 (venv)$ flask run
 `
-### Back-end
-This app uses:
+
+### Data Sources
+- [Open Snow](www.opensnow.com)
+- [Google Gecode](https://developers.google.com/maps/documentation/geocoding/start)
+
+
+### Data Sources
 - a SQLite database of pre-scraped data from [Opensnow.com](https://opensnow.com/), which includes the name and state/province of every ski resort in America and Canada
-- API calls to a [Python client library](https://github.com/googlemaps/google-maps-services-python) for Google Maps, allowing us to retrieve the latitude and longitude of each resort, as well as that of the user
-- [Bootstrap](http://getbootstrap.com) as the CSS framework
+- API calls to a [Python client library](https://github.com/googlemaps/google-maps-services-python) for Google Maps*, allowing us to retrieve the latitude and longitude of each resort, as well as that of the user
+
+*But, **Google needs an API key to work**, which needs to be stored in a file called 'secrets.py', organized as follows:
+
+#### secrets.py
+`google_places_key = 'API_KEY_HERE'`
+
 
 ### Views
 _Home_ page displays existing notes on ski resorts visited by Jerry.
