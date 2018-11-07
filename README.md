@@ -5,13 +5,13 @@ This app allows Jerry to keep track of his experiences at different ski resorts,
 
 ### Dependencies
 To run, execute the following commands:
-`
+```
 $ sudo apt-get -y install python3 python3-venv python3-dev  
 $ python3 -m venv venv  
 $ source venv/bin/activate  
 (venv)$ pip install flask-bootstrap flask-migrate flask-sqlalchemy flask-wtf numpy scipy googlemaps  
 (venv)$ flask run
-`
+```
 
 ### Data Sources
 - [Open Snow](www.opensnow.com)
