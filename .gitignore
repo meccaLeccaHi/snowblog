@@ -42,6 +42,12 @@ secrets.py
 # Ignore anything named 'snow_data'
 snow_data
 
+# Ignore anything named 'google_api.py'
+google_api.py
+
+# Ignore anything named 'populate_db.py'
+populate_db.py
+
 # Ignore files with the extension '.ipynb'
 *.ipynb
 
