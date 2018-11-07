@@ -23,10 +23,9 @@ $ source venv/bin/activate
 - API calls to a [Python client library](https://github.com/googlemaps/google-maps-services-python) for Google Maps*, allowing us to retrieve the latitude and longitude of each resort, as well as that of the user
 
 ***Google needs an API key to work**, which needs to be stored in a file called 'secrets.py', organized as follows:
-```
+
 #### secrets.py
-google_places_key = 'API_KEY_HERE'
-```
+`google_places_key = 'API_KEY_HERE'`
 
 ### Views
 _Home_ page displays existing notes on ski resorts visited by Jerry.
