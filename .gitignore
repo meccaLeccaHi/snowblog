@@ -41,3 +41,6 @@ secrets.py
 
 # Ignore files with the extension '.old.html'
 *.old.html
+
+# Ignore files with the extension '.old.html'
+*.ipynb
