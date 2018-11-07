@@ -22,7 +22,9 @@ def index():
 # 'Locate ski resorts' view
 @app.route('/locate', methods=['GET', 'POST'])
 def locate():
+	# Get data from form
 	form = LocateForm()
+	# Check validity
 	if form.validate_on_submit():
 		gmaps = googlemaps.Client(key=secrets.google_places_key)
 		
@@ -39,7 +41,7 @@ def locate():
 		# Sort and select 5 closest options
 		top5 = [Resort.query.get(int(i)).resortname for i in dist.argsort()[:5][::-1]]
 
-		# Provide user feedback
+		# Provide user feedback and reload page
 		flash('5 closest ski resorts:   {}'.format(top5))
 		return redirect('/locate')
 
@@ -49,7 +51,9 @@ def locate():
 # 'Comment' view
 @app.route('/comment', methods=['GET', 'POST'])
 def comment():
+	# Get data from form
 	form = CommentForm()
+	# Check validity
 	if form.validate_on_submit():
 		# Add comments to database
 		post = Post(body=form.comment.data, resortname=form.comment_resort.data)
