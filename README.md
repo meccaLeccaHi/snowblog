@@ -1,5 +1,4 @@
-# ![Yeti from Ski Free - Windows 95](./app/static/images/yeti2.gif)Welcome to Snowblog!
-
+# ![Yeti from Ski Free - Windows 95](./app/static/images/yeti.gif | width=100)Welcome to Snowblog!
 
 This app allows Jerry to keep track of his experiences at different ski resorts, and find new ones based on his location input! This is a beginner-friendly example of a simple [Flask](http://flask.pocoo.org/) application, that uses [Bootstrap](http://getbootstrap.com) as the CSS framework. It's designed to help demonstrate the use of Flask, within the context of an introductory Python course. As such, the code in this repo is deliberately simplified and heavily-commented for clarity.
 
