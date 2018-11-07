@@ -28,11 +28,11 @@ $ source venv/bin/activate
 `google_places_key = 'API_KEY_HERE'`
 
 ### Views
-_Home_ page displays existing notes on ski resorts visited by Jerry.
+_/index_ page displays existing notes on ski resorts visited by Jerry.
 ![Index View](./app/static/images/index_view.png)  
 
-_Locate_ page finds and displays the nearest ski resort (based on euclidean distance).
+_/locate_ page finds and displays the nearest ski resort (based on euclidean distance).
 ![Locate View](./app/static/images/locate_view.png)  
 
-_Comment_ page provides a way for the user (Jerry), to keep notes on his experiences at each resort.
+_/comment_ page provides a way for the user (Jerry), to keep notes on his experiences at each resort.
 ![Comment View](./app/static/images/comment_view.png)
