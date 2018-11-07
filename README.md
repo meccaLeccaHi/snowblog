@@ -6,10 +6,10 @@ This app allows Jerry to keep track of his experiences at different ski resorts,
 ### Dependencies
 To run, execute the following commands:
 `
-$ sudo apt-get -y install python3 python3-venv python3-dev
-$ python3 -m venv venv
-$ source venv/bin/activate
-(venv)$ pip install flask-bootstrap flask-migrate flask-sqlalchemy flask-wtf numpy scipy googlemaps
+$ sudo apt-get -y install python3 python3-venv python3-dev  
+$ python3 -m venv venv  
+$ source venv/bin/activate  
+(venv)$ pip install flask-bootstrap flask-migrate flask-sqlalchemy flask-wtf numpy scipy googlemaps  
 (venv)$ flask run
 `
 
@@ -22,11 +22,11 @@ $ source venv/bin/activate
 - a SQLite database of pre-scraped data from [Opensnow.com](https://opensnow.com/), which includes the name and state/province of every ski resort in America and Canada
 - API calls to a [Python client library](https://github.com/googlemaps/google-maps-services-python) for Google Maps*, allowing us to retrieve the latitude and longitude of each resort, as well as that of the user
 
-*But, **Google needs an API key to work**, which needs to be stored in a file called 'secrets.py', organized as follows:
-
+***Google needs an API key to work**, which needs to be stored in a file called 'secrets.py', organized as follows:
+```
 #### secrets.py
-`google_places_key = 'API_KEY_HERE'`
-
+google_places_key = 'API_KEY_HERE'
+```
 
 ### Views
 _Home_ page displays existing notes on ski resorts visited by Jerry.
