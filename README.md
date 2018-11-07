@@ -1,7 +1,7 @@
 # Welcome to Snowblog!
 
 
-This is an example Flask application that is designed to help Jerry keep track of his experiences at different ski resorts, aand find new ones!
+This app allows Jerry to keep track of his experiences at different ski resorts, and find new ones based on his location input! This is a beginner-friendly example of a simple Flask application, that is designed to help demonstrate the use of Flask, within the context of an introductory Python course. As such, the code in this repo is deliberately simplified and heavily-commented for clarity.
 
 ### Back-end
 This app uses:
