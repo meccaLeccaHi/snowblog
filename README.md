@@ -27,12 +27,20 @@ $ source venv/bin/activate
 #### secrets.py
 `google_places_key = 'API_KEY_HERE'`
 
+
 ### Views
 _/index_ page displays existing notes on ski resorts visited by Jerry.
 ![Index View](./app/static/images/index_view.png)  
 
-_/locate_ page finds and displays the nearest ski resort (based on euclidean distance) using Jerry location input.
+_/locate_ page finds and displays the nearest ski resort (based on euclidean distance) using Jerry's location input.
 ![Locate View](./app/static/images/locate_view.png)  
 
 _/comment_ page provides a way for Jerry to keep notes on his experiences at each resort.
 ![Comment View](./app/static/images/comment_view.png)
+
+
+### Possible project ideas:
+- Embed maps in results
+- Link directly from results to resort websites
+- Add '/resort/<resortname>' view
+- Paginate results

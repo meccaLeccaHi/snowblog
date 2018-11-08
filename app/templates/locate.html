@@ -7,6 +7,11 @@
         <div class="col-md-4">
             {{ wtf.quick_form(form) }}
         </div>
-    </div>
-	<span>Example: <i>101 Main St, Hometown, CA</i></span><br>
+    </div><br>
+	<span><b>5 closest resorts</b> <i>(from closest to furthest)</i><b>:</b></span><br>
+	<font color="blue"><ul>
+	{% for result in results %}
+    <li><i>{{ result }}</i></li>
+    {% endfor %}
+	</ul></font>
 {% endblock %}
