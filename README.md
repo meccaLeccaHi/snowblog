@@ -9,7 +9,7 @@ $ sudo apt-get -y install python3 python3-venv python3-dev
 $ python3 -m venv venv  
 $ source venv/bin/activate  
 (venv)$ export FLASK_APP=microblog.py  
-(venv)$ pip install flask-bootstrap flask-migrate flask-sqlalchemy flask-wtf numpy scipy googlemaps  
+(venv)$ pip install -r requirements.txt  
 (venv)$ flask run
 ```
 
@@ -44,3 +44,4 @@ _/comment_ page provides a way for Jerry to keep notes on his experiences at eac
 - Add `/resort/<resortname>` view
 - Paginate results
 - Add support for multiple languages (see [Flask-Babel](https://pythonhosted.org/Flask-Babel/))
+- Add logging and/or error testing
