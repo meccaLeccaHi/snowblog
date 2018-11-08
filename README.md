@@ -43,4 +43,4 @@ _/comment_ page provides a way for Jerry to keep notes on his experiences at eac
 - Embed maps in results
 - Add `/resort/<resortname>` view
 - Paginate results
-- Add support for multiple languages (see [Flask:Babel](https://pythonhosted.org/Flask-Babel/))
+- Add support for multiple languages (see [Flask-Babel](https://pythonhosted.org/Flask-Babel/))
