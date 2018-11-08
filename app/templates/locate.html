@@ -11,7 +11,7 @@
 	<span><b>5 closest resorts</b> <i>(from closest to furthest)</i><b>:</b></span><br>
 	<font color="blue"><ul>
 	{% for result in results %}
-    <li><i>{{ result }}</i></li>
+    <li><a href="{{ result.url }}"><i>{{ result.resortname }}</i></a></li>
     {% endfor %}
 	</ul></font>
 {% endblock %}

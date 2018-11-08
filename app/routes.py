@@ -39,7 +39,7 @@ def locate():
 		dist = np.array([distance.euclidean(rl, (user_loc['lat'], user_loc['lng'])) for rl in resort_locs])
 
 		# Sort and select 5 closest options
-		results = [Resort.query.get(int(i)).resortname for i in dist.argsort()[:5][::-1]]
+		results = [Resort.query.get(int(i)) for i in dist.argsort()[:5][::-1]]
 
 	else:
 		results=[]
