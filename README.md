@@ -41,5 +41,5 @@ _/comment_ page provides a way for Jerry to keep notes on his experiences at eac
 
 ### Possible project ideas:
 - Embed maps in results
-- Add '/resort/<resortname>' view
+- Add "/resort/<resortname>" view
 - Paginate results
