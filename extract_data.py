@@ -23,7 +23,7 @@ def extract():
 	''' Extract data of interest from old database '''
 
 	# Un-pickle snow data
-	infile = open('../snow_data','rb')
+	infile = open('snow_data','rb')
 	data = pickle.load(infile)
 	infile.close()
 	
