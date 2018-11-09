@@ -1,7 +1,7 @@
 from flask import render_template, flash, redirect, url_for
 from app import app, db
 from app.forms import LocateForm, CommentForm
-from app.models import Resort, Post
+#from app.models import Resort, Post
 from scipy.spatial import distance
 import googlemaps
 from config import Config
