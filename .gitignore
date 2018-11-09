@@ -38,6 +38,9 @@ microblog.log*
 
 # Ignore anything named 'secrets.py'
 secrets.py
+extract_data.py
+populate_db.py
+snow_data
 
 # Ignore files with the extension '.old.html'
 *.old.html

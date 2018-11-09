@@ -1,7 +1,7 @@
 from flask import render_template, flash, redirect, url_for
 from app import app, db
 from app.forms import LocateForm, CommentForm
-#from app.models import Resort, Post
+from app.models import Resort, Post
 from scipy.spatial import distance
 import googlemaps
 from config import Config
@@ -12,9 +12,9 @@ import numpy as np
 @app.route('/index')
 def index():
 
-	## Get list of all posts
-	#posts = Post.query.all()
-	posts = []
+	# Get list of all posts
+	posts = Post.query.all()
+	#posts = []
 
 	# Render them in webpage
 	return render_template('index.html', title='Home', posts=posts)
