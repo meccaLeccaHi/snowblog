@@ -5,7 +5,7 @@ from app import db
 class Resort(db.Model):
 	# Define table columns
 	id = db.Column(db.Integer, primary_key=True)
-	resortname = db.Column(db.String(64), index=True, unique=True)
+	resortname = db.Column(db.String(64), index=True)
 	state = db.Column(db.String(2))
 	latitude = db.Column(db.Integer)
 	longitude = db.Column(db.Integer)
@@ -20,7 +20,7 @@ class Post(db.Model):
 	# Define table columns
 	id = db.Column(db.Integer, primary_key=True)
 	body = db.Column(db.String(140))
-	resortname = db.Column(db.String(64), index=True, unique=True)
+	resortname = db.Column(db.String(64), index=True)
 
 	# Define the representation of instances of this class
 	def __repr__(self):

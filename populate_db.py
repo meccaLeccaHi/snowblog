@@ -14,9 +14,9 @@ def insert_data(data):
 			name = state['resorts'][i]
 			state_name = state['state']
 			lat = state['geocodes'][i][0]
-			long = state['geocodes'][i][1]
+			lng = state['geocodes'][i][1]
 			url = state['urls'][i]
-			insertion = (None, name, state_name, lat, long, url)
+			insertion = (None, name, state_name, lat, lng, url)
 			statement = 'INSERT INTO "Resort" '
 			statement += 'VALUES (?, ?, ?, ?, ?, ?)'
 			cur.execute(statement, insertion)
