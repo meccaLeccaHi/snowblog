@@ -30,7 +30,7 @@ $ source venv/bin/activate
 _/index_ page displays existing notes on ski resorts visited by Jerry.
 ![Index View](./app/static/images/index_view.png)  
 
-_/locate_ page finds and displays the nearest ski resort (based on euclidean distance) using Jerry's location input.
+_/locate_ page finds and displays links to the 5 nearest ski resorts (based on euclidean distance) using Jerry's location.
 ![Locate View](./app/static/images/locate_view.png)  
 
 _/comment_ page provides a way for Jerry to keep notes on his experiences at each resort.
