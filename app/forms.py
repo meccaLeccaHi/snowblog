@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import SelectField, StringField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired
-#from app.models import Resort
+from app.models import Resort
 
 # Define class for location form
 class LocateForm(FlaskForm):
@@ -13,8 +13,8 @@ class LocateForm(FlaskForm):
 # Define class for comment form
 class CommentForm(FlaskForm):
 	# Refine choices for drop-down menu from db
-	#choices = [(r.resortname, r.resortname) for r in Resort.query.order_by('resortname').all()]
-	choices=[('Aspen', 'Aspen'), ('Alyeska', 'Alyeska'), ('Arizona Snow Bowl', 'Arizona Snow Bowl')]
+	choices = [(r.resortname, r.resortname) for r in Resort.query.order_by('resortname').all()]
+	#choices=[('Aspen', 'Aspen'), ('Alyeska', 'Alyeska'), ('Arizona Snow Bowl', 'Arizona Snow Bowl')]
 	# Create drop-down menu
 	comment_resort = SelectField('Select Resort:', choices=choices)
 	# Create comment field
