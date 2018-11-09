@@ -12,9 +12,10 @@ import numpy as np
 @app.route('/index')
 def index():
 
-	# Get list of all posts
-	posts = Post.query.all()
-	
+	## Get list of all posts
+	#posts = Post.query.all()
+	posts = []
+
 	# Render them in webpage
 	return render_template('index.html', title='Home', posts=posts)
 
