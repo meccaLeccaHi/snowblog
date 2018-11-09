@@ -8,7 +8,9 @@
             {{ wtf.quick_form(form) }}
         </div>
     </div><br>
+	{% if results %}
 	<span><b>5 closest resorts</b> <i>(from closest to furthest)</i><b>:</b></span><br>
+	{% endif %}
 	<ul>
 	{% for result in results %}
     <li><a href="{{ result.url }}"><i>{{ result.resortname }}</i></a></li>

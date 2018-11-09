@@ -6,6 +6,6 @@
 	<h1><img src="/static/images/yeti.gif" alt="Yeti from SkiFree on Windows 95" width="10%" height="auto">
 	Jerry's snowblog</h1>
     {% for post in posts %}
-    <div><p>Jerry sez this about <b>{{ post.resortname }}</b>:<i>{{ post.body }}</i></p></div>
+    <div><p>Jerry sez this about <b>{{ post.resortname }}</b>:&emsp;<t><i>{{ post.body }}</i></p></div>
     {% endfor %}
 {% endblock %}

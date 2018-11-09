@@ -4,7 +4,7 @@ from app.forms import LocateForm, CommentForm
 from app.models import Resort, Post
 from scipy.spatial import distance
 import googlemaps
-import secrets
+from config import Config
 import numpy as np
 
 # 'Home' view
@@ -26,7 +26,7 @@ def locate():
 	form = LocateForm()
 	# Check validity
 	if form.validate_on_submit():
-		gmaps = googlemaps.Client(key=secrets.google_places_key)
+		gmaps = googlemaps.Client(key=Config.GOOGLE_KEY)
 		
 		# Geocode address w/ Google API
 		geocoding_results = gmaps.geocode(form.address.data)
