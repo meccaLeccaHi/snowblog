@@ -20,7 +20,7 @@ def index():
 	return render_template('index.html', title='Home', posts=posts)
 
 
-# 'Locate ski resorts' view
+# 'Location' view
 @app.route('/locate', methods=['GET', 'POST'])
 def locate():
 	# Get data from form
