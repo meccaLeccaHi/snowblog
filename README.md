@@ -18,7 +18,7 @@ $ source venv/bin/activate
 
 ### Data Sources
 - a SQLite database of pre-scraped data from [Opensnow.com](https://opensnow.com/), which includes the name and state/province of every ski resort in America and Canada.
-- API calls to [Google Gecode](https://developers.google.com/maps/documentation/geocoding/start)* via a [Python client library](https://github.com/googlemaps/google-maps-services-python), allowing the retrieval of the latitude and longitude of each resort, as well as that of the user.
+- API calls to [Google Geocode](https://developers.google.com/maps/documentation/geocoding/start)* via a [Python client library](https://github.com/googlemaps/google-maps-services-python), allowing the retrieval of the latitude and longitude of each resort, as well as that of the user.
 
 ***Google needs an API key to work**, which needs to be defined as an environmental variable as follows:
 >`$ export GOOGLE_KEY='API_KEY_HERE'`
